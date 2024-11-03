@@ -27,6 +27,6 @@ const productSchema = new Schema<TProduct>({
     type: String,
     default: "https://res.cloudinary.com/deicntkum/image/upload/v1730381686/default_zhxifw.png"
   },
-});
+}, { timestamps: true });
   
 export default model<TProduct>("Product", productSchema);

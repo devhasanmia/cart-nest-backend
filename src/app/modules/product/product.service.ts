@@ -18,7 +18,7 @@ const addProduct = async (image: string, payload: TProduct) => {
 // Get all products Start
 const getAllProducts = async () => {
   try {
-    const products = await productModel.find({});
+    const products = await productModel.find({}).sort({ updatedAt: -1 });
     return products;
   } catch (error) {
     throw new Error("Failed to get products.");
