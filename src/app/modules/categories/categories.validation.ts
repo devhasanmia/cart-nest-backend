@@ -19,7 +19,7 @@ const update = z.object({
 })
 
 
-const CategoryValidation = {
+export const CategoryValidation = {
     create,
     update,
 }
